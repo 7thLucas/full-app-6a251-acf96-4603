@@ -1,0 +1,108 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: row;
+    gap: 0;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+  }
+  .mode-landscape .sl-left-zone {
+    width: 50%;
+  }
+  .mode-landscape .sl-right-zone {
+    width: 50%;
+  }
+  .mode-portrait .sl-left-zone,
+  .mode-portrait .sl-right-zone {
+    width: 100%;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Problem Zone -->
+    <div class="sl-left-zone flex flex-col justify-center p-12" style="background: #f8fafc; border-right: 1px solid #e2e8f0;">
+      <!-- Label -->
+      <div class="flex items-center gap-2 mb-6">
+        <div class="w-2 h-2 rounded-full" style="background: #ef4444;"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color: #ef4444;">The Problem</span>
+      </div>
+
+      <h2 class="font-bold mb-5" style="font-size: 1.75rem; color: #0f172a; line-height: 1.2;">
+        Managing money is fragmented and confusing
+      </h2>
+
+      <p class="text-sm leading-relaxed mb-6" style="color: #64748b;">
+        Most people juggle multiple screens, unclear interfaces, and outdated designs just to do basic banking. Checking a balance, reviewing a transaction, or understanding where money went requires too many steps and too much effort.
+      </p>
+
+      <div class="flex flex-col gap-3">
+        <div class="flex items-start gap-3 rounded-lg p-3" style="background: #fef2f2; border: 1px solid #fecaca;">
+          <span class="text-sm mt-0.5">&#9888;</span>
+          <p class="text-xs leading-relaxed" style="color: #7f1d1d;">Scattered information across multiple views makes it hard to get a clear financial picture.</p>
+        </div>
+        <div class="flex items-start gap-3 rounded-lg p-3" style="background: #fef2f2; border: 1px solid #fecaca;">
+          <span class="text-sm mt-0.5">&#9888;</span>
+          <p class="text-xs leading-relaxed" style="color: #7f1d1d;">No actionable spending insight — users can't easily see where their money is going.</p>
+        </div>
+        <div class="flex items-start gap-3 rounded-lg p-3" style="background: #fef2f2; border: 1px solid #fecaca;">
+          <span class="text-sm mt-0.5">&#9888;</span>
+          <p class="text-xs leading-relaxed" style="color: #7f1d1d;">Card management buried in menus — freezing, limits, and settings feel inaccessible.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solution Zone -->
+    <div class="sl-right-zone flex flex-col justify-center p-12" style="background: #ffffff;">
+      <!-- Label -->
+      <div class="flex items-center gap-2 mb-6">
+        <div class="w-2 h-2 rounded-full" style="background: #22c55e;"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color: #16a34a;">The Solution</span>
+      </div>
+
+      <h2 class="font-bold mb-5" style="font-size: 1.75rem; color: #0f172a; line-height: 1.2;">
+        One clean app — everything in its place
+      </h2>
+
+      <p class="text-sm leading-relaxed mb-6" style="color: #64748b;">
+        A focused, modern banking app that brings balance, card management, transaction history, and spending analytics together in a single, calm interface — designed so users feel in control at a glance.
+      </p>
+
+      <div class="flex flex-col gap-3">
+        <div class="flex items-start gap-3 rounded-lg p-3" style="background: #f0fdf4; border: 1px solid #bbf7d0;">
+          <svg class="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <circle cx="8" cy="8" r="7" fill="#22c55e"/>
+            <path d="M5 8l2.5 2.5L11 5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <p class="text-xs leading-relaxed" style="color: #14532d;">Balance visible instantly — no navigation required to know where you stand.</p>
+        </div>
+        <div class="flex items-start gap-3 rounded-lg p-3" style="background: #f0fdf4; border: 1px solid #bbf7d0;">
+          <svg class="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <circle cx="8" cy="8" r="7" fill="#22c55e"/>
+            <path d="M5 8l2.5 2.5L11 5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <p class="text-xs leading-relaxed" style="color: #14532d;">Spending analytics that turn raw transactions into clear category insights.</p>
+        </div>
+        <div class="flex items-start gap-3 rounded-lg p-3" style="background: #f0fdf4; border: 1px solid #bbf7d0;">
+          <svg class="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <circle cx="8" cy="8" r="7" fill="#22c55e"/>
+            <path d="M5 8l2.5 2.5L11 5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <p class="text-xs leading-relaxed" style="color: #14532d;">Card management front and center — easy to freeze, configure, and monitor.</p>
+        </div>
+      </div>
+
+      <!-- Visual anchor -->
+      <div class="mt-6 rounded-xl overflow-hidden" style="height: 120px;">
+        <img
+          src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=clean%20modern%20mobile%20banking%20dashboard%20UI%20showing%20balance%20and%20spending%20chart%2C%20minimal%20flat%20design%2C%20blue%20and%20white%20palette"
+          alt="Banking app dashboard"
+          class="w-full h-full object-cover"
+          style="border-radius: 12px;"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
