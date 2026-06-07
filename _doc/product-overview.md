@@ -36,8 +36,19 @@ Visual spending breakdowns by category (groceries, dining, travel, subscriptions
 ## Scope
 - Mobile-first personal banking interface (progressive web app)
 - Consumer-facing personal banking — not a business banking tool
-- Initial scope is limited to the four core features listed above
-- Out of initial scope: money transfers, bill payments, savings goals, investment tools, lending
+- MVP covers the four core features listed above
+- Out of current scope: money transfers, investment tools, lending, external calendar integration, push/SMS notifications
+
+## Roadmap Features
+
+### Smart Budget Alerts
+Per-category monthly spending limits with in-app notifications at configurable thresholds (e.g. 80% approaching, 100% exceeded). Progress indicators in the spending analytics view show spend vs. limit at a glance.
+
+### Bill & Subscription Tracker
+Automatic detection of recurring payments from transaction history — displaying merchant, amount, frequency, and next expected due date. A summary card shows total monthly committed spend. Users can manually add or dismiss detected items.
+
+### Savings Goals
+Named savings targets (e.g. holiday, emergency fund) with a target amount and optional deadline. Visual progress tracking, projected completion dates based on current spending patterns, and a Savings Impact insight in analytics showing how reducing discretionary spend accelerates goal timelines.
 
 ## Strategic Principles
 1. **Clarity first** — Every screen is immediately legible. If it takes more than a glance, simplify it.
