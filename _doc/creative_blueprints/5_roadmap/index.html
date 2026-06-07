@@ -1,0 +1,120 @@
+<style>
+  .mode-landscape .sl-outer {
+    padding: 2.5rem 3rem;
+  }
+  .mode-portrait .sl-outer {
+    padding: 2rem;
+  }
+  .mode-landscape .sl-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mode-portrait .sl-cards {
+    grid-template-columns: 1fr;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-outer flex flex-col h-full">
+
+    <!-- Header -->
+    <div class="flex items-end justify-between mb-6">
+      <div>
+        <p class="text-xs font-bold tracking-widest uppercase mb-2" style="color: #2563eb;">What's Next</p>
+        <h2 class="font-bold" style="font-size: 1.9rem; color: #0f172a; line-height: 1.15;">
+          Smarter money management,<br/>coming soon.
+        </h2>
+      </div>
+      <span class="px-3 py-1.5 rounded-full text-xs font-semibold" style="background: #eff6ff; color: #1d4ed8;">Roadmap</span>
+    </div>
+
+    <!-- Roadmap Feature Cards -->
+    <div class="sl-cards grid gap-4 flex-1" style="align-content: start;">
+
+      <!-- Smart Budget Alerts -->
+      <div class="rounded-2xl p-5 flex flex-col gap-4" style="background: #1a3a5c; border: 1px solid #1e3a5f; min-height: 200px;">
+        <!-- Icon -->
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.12);">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 2a6 6 0 016 6c0 3.5-1.5 5.5-2 7H6c-.5-1.5-2-3.5-2-7a6 6 0 016-6z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M8 15.5c0 1.1.9 2 2 2s2-.9 2-2" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <p class="font-bold text-sm mb-2" style="color: #ffffff;">Smart Budget Alerts</p>
+          <p class="text-xs leading-relaxed mb-4" style="color: rgba(255,255,255,0.65);">Set monthly spending limits per category. Get notified at 80% and 100% of your limit — before overspending happens, not after.</p>
+          <!-- Mini progress indicator -->
+          <div class="rounded-lg p-3" style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="flex justify-between mb-1.5">
+              <span class="text-xs" style="color: rgba(255,255,255,0.5);">Dining — this month</span>
+              <span class="text-xs font-semibold" style="color: #fbbf24;">82%</span>
+            </div>
+            <div class="rounded-full h-1.5 w-full" style="background: rgba(255,255,255,0.15);">
+              <div class="rounded-full h-1.5" style="width: 82%; background: #fbbf24;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bill & Subscription Tracker -->
+      <div class="rounded-2xl p-5 flex flex-col gap-4" style="background: #eff6ff; border: 1px solid #bfdbfe; min-height: 200px;">
+        <!-- Icon -->
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background: #2563eb;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <rect x="3" y="4" width="14" height="13" rx="2" stroke="white" stroke-width="1.5"/>
+            <path d="M3 8h14" stroke="white" stroke-width="1.5"/>
+            <path d="M7 2v3M13 2v3" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M6 12h3M11 12h3" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <p class="font-bold text-sm mb-2" style="color: #1e3a5f;">Bill & Subscription Tracker</p>
+          <p class="text-xs leading-relaxed mb-4" style="color: #475569;">Recurring payments detected automatically from your history. See upcoming due dates and your total monthly committed spend — no manual entry needed.</p>
+          <!-- Mini subscription list -->
+          <div class="flex flex-col gap-1.5">
+            <div class="flex justify-between items-center rounded-lg px-3 py-1.5" style="background: #dbeafe;">
+              <span class="text-xs font-medium" style="color: #1e3a5f;">Netflix</span>
+              <span class="text-xs" style="color: #2563eb;">$15.99 · monthly</span>
+            </div>
+            <div class="flex justify-between items-center rounded-lg px-3 py-1.5" style="background: #dbeafe;">
+              <span class="text-xs font-medium" style="color: #1e3a5f;">Spotify</span>
+              <span class="text-xs" style="color: #2563eb;">$9.99 · monthly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Savings Goals -->
+      <div class="rounded-2xl p-5 flex flex-col gap-4" style="background: #f0fdf4; border: 1px solid #bbf7d0; min-height: 200px;">
+        <!-- Icon -->
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background: #16a34a;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 17l3.5-4 3.5 2.5L14 9l3 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="15" cy="5" r="2" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <p class="font-bold text-sm mb-2" style="color: #14532d;">Savings Goals</p>
+          <p class="text-xs leading-relaxed mb-4" style="color: #166534;">Create named targets — holiday, emergency fund, or anything else. Track progress visually and see a projected completion date based on your actual spending patterns.</p>
+          <!-- Mini goal progress -->
+          <div class="rounded-lg p-3" style="background: #dcfce7; border: 1px solid #bbf7d0;">
+            <div class="flex justify-between mb-1.5">
+              <span class="text-xs font-medium" style="color: #14532d;">Summer Holiday</span>
+              <span class="text-xs font-semibold" style="color: #16a34a;">$1,200 / $3,000</span>
+            </div>
+            <div class="rounded-full h-1.5 w-full" style="background: rgba(0,0,0,0.1);">
+              <div class="rounded-full h-1.5" style="width: 40%; background: #16a34a;"></div>
+            </div>
+            <p class="text-xs mt-1.5" style="color: #166534;">On track for March 2026</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom tagline -->
+    <div class="mt-5 pt-4" style="border-top: 1px solid #e2e8f0;">
+      <p class="text-xs" style="color: #94a3b8;">Built on the same clarity principles as today's core — more insight, zero added complexity.</p>
+    </div>
+
+  </div>
+</section>
