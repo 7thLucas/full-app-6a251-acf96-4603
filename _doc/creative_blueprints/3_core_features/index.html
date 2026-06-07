@@ -1,0 +1,101 @@
+<style>
+  .mode-landscape .sl-outer {
+    padding: 2.5rem 3rem;
+  }
+  .mode-portrait .sl-outer {
+    padding: 2rem;
+  }
+  .mode-landscape .sl-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mode-portrait .sl-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-outer flex flex-col h-full">
+
+    <!-- Header row -->
+    <div class="flex items-end justify-between mb-6">
+      <div>
+        <p class="text-xs font-bold tracking-widest uppercase mb-2" style="color: #2563eb;">Core Features</p>
+        <h2 class="font-bold" style="font-size: 1.9rem; color: #0f172a; line-height: 1.15;">
+          Everything you need,<br/>nothing you don't.
+        </h2>
+      </div>
+
+      <!-- Persona chips -->
+      <div class="flex gap-2 pb-1">
+        <span class="px-3 py-1.5 rounded-full text-xs font-semibold" style="background: #1a3a5c; color: #ffffff;">Personal Users</span>
+        <span class="px-3 py-1.5 rounded-full text-xs font-semibold" style="background: #f1f5f9; color: #475569;">Small Business</span>
+      </div>
+    </div>
+
+    <!-- Feature Cards Grid -->
+    <div class="sl-grid grid gap-4 flex-1" style="align-content: start;">
+
+      <!-- Balance Overview -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: #1a3a5c; border: 1px solid #1e3a5f; min-height: 150px;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: rgba(255,255,255,0.12);">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <rect x="2" y="5" width="16" height="11" rx="2" stroke="white" stroke-width="1.5"/>
+            <path d="M2 9h16" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-1" style="color: #ffffff;">Balance Overview</p>
+          <p class="text-xs leading-relaxed" style="color: rgba(255,255,255,0.65);">See your current balance front and center — updated in real time, always visible.</p>
+        </div>
+      </div>
+
+      <!-- Card Management -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: #eff6ff; border: 1px solid #bfdbfe; min-height: 150px;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: #2563eb;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <rect x="2" y="6" width="16" height="10" rx="2" stroke="white" stroke-width="1.5"/>
+            <path d="M2 10h16" stroke="white" stroke-width="1.5"/>
+            <circle cx="6.5" cy="14" r="1" fill="white"/>
+          </svg>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-1" style="color: #1e3a5f;">Card Management</p>
+          <p class="text-xs leading-relaxed" style="color: #475569;">Freeze, unfreeze, and configure your card settings without calling support.</p>
+        </div>
+      </div>
+
+      <!-- Recent Transactions -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: #faf5ff; border: 1px solid #e9d5ff; min-height: 150px;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: #7c3aed;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 6h12M4 10h8M4 14h10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-1" style="color: #4c1d95;">Recent Transactions</p>
+          <p class="text-xs leading-relaxed" style="color: #5b21b6;">A clean, scannable list of your latest activity — merchant, amount, date, category.</p>
+        </div>
+      </div>
+
+      <!-- Spending Analytics -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: #f0fdf4; border: 1px solid #bbf7d0; min-height: 150px;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: #16a34a;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 15l4-5 4 3 5-7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-1" style="color: #14532d;">Spending Analytics</p>
+          <p class="text-xs leading-relaxed" style="color: #166534;">Visual breakdowns by category, time period, and trend — understand where money goes.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom tagline -->
+    <div class="mt-5 pt-4" style="border-top: 1px solid #e2e8f0;">
+      <p class="text-xs" style="color: #94a3b8;">Designed for clarity — every feature surfaces the information users need, without friction.</p>
+    </div>
+
+  </div>
+</section>
