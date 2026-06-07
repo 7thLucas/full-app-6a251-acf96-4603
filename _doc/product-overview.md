@@ -1,0 +1,1 @@
+I want to create a clean and modern banking app where users can easily check their balance, manage their card, review recent transactions, and see spending analytics
