@@ -1,0 +1,110 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: row;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+  }
+  .mode-landscape .sl-content-col {
+    width: 55%;
+  }
+  .mode-landscape .sl-visual-col {
+    width: 45%;
+  }
+  .mode-portrait .sl-content-col {
+    width: 100%;
+  }
+  .mode-portrait .sl-visual-col {
+    width: 100%;
+    flex: 1;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Content Column -->
+    <div class="sl-content-col flex flex-col justify-between p-12" style="background: #ffffff;">
+      <!-- Top brand mark -->
+      <div>
+        <div class="flex items-center gap-3 mb-12">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: #1a3a5c;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="2" y="5" width="16" height="11" rx="2" stroke="white" stroke-width="1.5"/>
+              <path d="M2 9h16" stroke="white" stroke-width="1.5"/>
+              <circle cx="6" cy="13" r="1" fill="white"/>
+            </svg>
+          </div>
+          <span class="text-sm font-semibold tracking-widest uppercase" style="color: #1a3a5c; letter-spacing: 0.18em;">Banking App</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-bold leading-tight mb-6" style="font-size: 2.8rem; color: #0f172a; line-height: 1.1;">
+          Your Money.<br/>
+          <span style="color: #1a3a5c;">Clear.</span> Simple.<br/>
+          Always There.
+        </h1>
+
+        <!-- Tagline -->
+        <p class="text-base leading-relaxed mb-8" style="color: #475569; max-width: 340px;">
+          A clean, modern banking experience — check balances, manage cards, review transactions, and understand your spending at a glance.
+        </p>
+
+        <!-- Divider accent -->
+        <div class="w-12 h-1 rounded-full mb-8" style="background: #2563eb;"></div>
+
+        <!-- Key promise pills -->
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full text-xs font-medium" style="background: #eff6ff; color: #1d4ed8;">Balance at a Glance</span>
+          <span class="px-3 py-1 rounded-full text-xs font-medium" style="background: #f0fdf4; color: #166534;">Card Management</span>
+          <span class="px-3 py-1 rounded-full text-xs font-medium" style="background: #faf5ff; color: #6b21a8;">Spending Analytics</span>
+        </div>
+      </div>
+
+      <!-- Attribution area -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual Column -->
+    <div class="sl-visual-col relative overflow-hidden" style="background: linear-gradient(135deg, #1a3a5c 0%, #2563eb 60%, #1e40af 100%);">
+      <!-- Decorative circles -->
+      <div class="absolute" style="width: 320px; height: 320px; border-radius: 50%; background: rgba(255,255,255,0.04); top: -60px; right: -60px;"></div>
+      <div class="absolute" style="width: 220px; height: 220px; border-radius: 50%; background: rgba(255,255,255,0.06); bottom: 40px; left: -50px;"></div>
+
+      <!-- Mock card UI -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center p-10 gap-5">
+        <!-- Bank card mockup -->
+        <div class="w-full rounded-2xl p-6 shadow-2xl" style="max-width: 280px; background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); border: 1px solid rgba(255,255,255,0.12);">
+          <div class="flex justify-between items-start mb-6">
+            <div>
+              <p class="text-xs mb-1" style="color: rgba(255,255,255,0.5); letter-spacing: 0.08em;">BALANCE</p>
+              <p class="text-2xl font-bold" style="color: #ffffff;">$12,480.50</p>
+            </div>
+            <div class="w-8 h-8 rounded-full" style="background: rgba(255,255,255,0.12);"></div>
+          </div>
+          <div class="flex gap-2 mb-4">
+            <span class="w-8 h-5 rounded" style="background: rgba(255,255,255,0.2);"></span>
+            <span class="w-8 h-5 rounded" style="background: rgba(255,255,255,0.12);"></span>
+          </div>
+          <p class="text-sm tracking-widest" style="color: rgba(255,255,255,0.7);">•••• •••• •••• 4821</p>
+        </div>
+
+        <!-- Spending bar mockup -->
+        <div class="w-full rounded-xl p-4" style="max-width: 280px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);">
+          <p class="text-xs font-semibold mb-3" style="color: rgba(255,255,255,0.6); letter-spacing: 0.06em;">THIS MONTH</p>
+          <div class="flex gap-2 items-end mb-2">
+            <div class="rounded" style="width: 24px; height: 36px; background: rgba(96,165,250,0.7);"></div>
+            <div class="rounded" style="width: 24px; height: 48px; background: rgba(96,165,250,0.9);"></div>
+            <div class="rounded" style="width: 24px; height: 28px; background: rgba(96,165,250,0.6);"></div>
+            <div class="rounded" style="width: 24px; height: 52px; background: #60a5fa;"></div>
+            <div class="rounded" style="width: 24px; height: 40px; background: rgba(96,165,250,0.7);"></div>
+          </div>
+          <p class="text-xs" style="color: rgba(255,255,255,0.5);">Spending analytics</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
